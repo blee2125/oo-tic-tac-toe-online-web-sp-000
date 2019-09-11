@@ -54,7 +54,7 @@ class TicTacToe
     display_board
   end
   def over?
-    won? || full?
+    won? || draw?
   end
   def won?
     WIN_COMBINATIONS.any? do |combo|

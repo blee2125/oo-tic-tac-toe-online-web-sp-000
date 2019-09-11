@@ -21,7 +21,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
   def full?
-    @board.all?{|token| token == "X" || token == "O"}
+    @board.all?{|token| token != " "}
   end
   def current_player
     turn_count % 2 == 0 ? "X" : "O"

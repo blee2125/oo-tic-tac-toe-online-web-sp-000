@@ -32,8 +32,8 @@ class TicTacToe
   def input_to_index(user_input)
     user_input.to_i - 1
   end
-  def move(index, player)
-    @board[index] = player
+  def move(index, token)
+    @board[index] = token
   end
   def position_taken?(index)
     @board[index] == 'X' || @board[index] == 'O'
